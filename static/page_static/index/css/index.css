@@ -1,0 +1,26 @@
+.container{
+            /*边框高度*/
+            height: 350px;
+            /*边框宽度*/
+            width: auto;
+            max-width: 500px;
+            /*边框颜色*/
+            border: #4d4d4d solid 1px;
+            /*边框圆角*/
+            border-radius: 4px;
+            /*阴影 水平方向，竖直方向，模糊距离*/
+            box-shadow: 5px 5px 5px #4d4d4d;
+            /*上边界距离*/
+            margin-top: 200px ;
+            /*左边界距离：自动*/
+            margin-left: auto;
+
+            /*右边界距离：自动*/
+            margin-right: auto;
+            /*用户名、密码间距*/
+            padding: 20px 40px;
+}
+body {
+    background-image: url("/static/images/backgound-img/login.png");
+}
+

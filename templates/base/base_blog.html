@@ -1,0 +1,52 @@
+{% extends "base/nav.html" %}
+
+
+
+{% block css %}
+    <link href="/static/page_static/MainIndex/css/Mainindex.css" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h4 class="masthead-brand"><a href="/home/index"><img src="/static/images/backgound-img/boy.png" style="width:50px;height: 50px" ></a> 欢迎 {{ username }}<a href="/index/loginout" style="color: #5e666c"> 退出登录 </a></h4>
+
+              <nav>
+                <ul class="nav masthead-nav">
+                    <li ><a href="/mainindex/blog">主页</a></li>
+                    <li><a href="#">时间轴</a></li>
+                    <li><a href="#">分类</a></li>
+                    <li><a href="#">音乐馆</a></li>
+                    <li><a href="#">归档</a></li>
+                    <li><a href="#">留言板</a></li>
+                    <li><a href="#">友人帐</a></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+
+              </nav>
+            </div>
+          </div>
+
+          <div class="cover-container">
+            {% block cover %}
+
+            {% endblock %}
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>该网站使用<a href="https://getbootstrap.com/">bootstrap</a>+<a href="https://www.djangoproject.com//">django</a>搭建,by <a href="https://github.com/aglorice">@aglorice</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+{% endblock %}

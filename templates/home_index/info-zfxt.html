@@ -1,0 +1,95 @@
+{% extends "base/nav-zfxt.html" %}
+
+{% block title %}
+    <title>个人信息</title>
+{% endblock %}
+
+{% block css %}
+    <link href="/static/page_static/home_index/css/info-zfxt.css" rel="stylesheet">
+{% endblock %}
+{% block js %}
+    <script src="/static/base_static/couse/Timetables.min.js"></script>
+    <script src="/static/page_static/home_index/js/info-zfxt.js"></script>
+    <script src="/static/page_static/home_index/js/home_index.js"></script>
+{% endblock %}
+{% block content1 %}
+<div class="panel panel-default" style="margin-bottom: 0">
+  <div class="panel-body">
+    个人简介
+  </div>
+</div>
+<div class="row" style="border: 1px #2aabd2 ">
+
+    <div class="container">
+
+        <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img class="img-circle" src="/static/images/backgound-img/good%20(2).png" alt="" >
+          <div class="caption">
+            <h3>个人信息</h3>
+               <ul class="list-group">
+                <li class="list-group-item">姓名: <i id="grxx1"></i></li>
+                <li class="list-group-item">学号: <i id="grxx2"></i></li>
+                <li class="list-group-item">二级学院: <i id="grxx3"></i></li>
+                <li class="list-group-item">专业: <i id="grxx4"></i></li>
+                <li class="list-group-item">班级: <i id="grxx5"></i></li>
+                <li class="list-group-item">政治面貌: <i id="grxx6"></i></li>
+                <li class="list-group-item">状态: <i id="grxx7"></i></li>
+            </ul>
+
+          </div>
+        </div>
+
+  </div>
+  <div class="col-sm-6 col-md-8">
+
+          <div>
+              <div class="row">
+  <div class="col-lg-4">
+
+   <input type="text" id="cx_year" class="form-control" placeholder="请输入年份" />
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-4">
+   <input id="zylb" class="form-control" type="text" list="list" placeholder="请选择课目类别">
+            <datalist id="list">
+                <option value="3">全部成绩</option>
+                <option value="2">专业成绩</option>
+                <option value="1">学位成绩</option>
+            </datalist>
+  </div>
+  <div class="col-lg-4">
+    <div class="input-group">
+      <input type="text" class="form-control" id="cx_month" placeholder="0为上半年，1为下半年">
+      <span class="input-group-btn">
+        <button class="btn btn-default" id="grade_cx" type="button">查询</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+          </div>
+
+       <div id="main" style="width:100%;height: 586px" ></div>
+
+  </div>
+
+
+</div>
+</div>
+
+<div class="panel panel-default" style="margin-bottom: 0">
+  <div class="panel-body">
+    课程表
+  </div>
+</div>
+
+<div class="container">
+    <div id="coursesTable"></div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
